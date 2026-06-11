@@ -1,0 +1,114 @@
+/* My Little Yellow Fish — flat cartoon palette from the game */
+:root {
+  --giallo: #FFC93C;
+  --giallo-scuro: #E0A415;
+  --blu: #143C64;
+  --blu-scuro: #0E2C4A;
+  --blu-chiaro: #1C4E80;
+  --azzurro: #BDE6FF;
+  --bianco-ghiaccio: #EAF5FF;
+  --corallo: #FF6F61;
+  --testo-su-giallo: #7A5400;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Fredoka", system-ui, -apple-system, sans-serif;
+  background: linear-gradient(180deg, var(--blu-chiaro) 0%, var(--blu) 45%, var(--blu-scuro) 100%);
+  color: var(--bianco-ghiaccio);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+
+header.site {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fish {
+  font-size: 64px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+h1 .yellow { color: var(--giallo); }
+
+.tagline {
+  display: inline-block;
+  background: rgba(20, 60, 100, 0.55);
+  border: 1.5px solid rgba(189, 230, 255, 0.3);
+  border-radius: 999px;
+  padding: 6px 18px;
+  color: white;
+  font-size: 15px;
+}
+
+.card {
+  background: var(--blu-chiaro);
+  border: 3px solid rgba(189, 230, 255, 0.22);
+  border-radius: 30px;
+  padding: 28px 32px;
+  box-shadow: 0 7px 0 #0C2B49;
+  margin-bottom: 28px;
+}
+
+h2 {
+  color: var(--giallo);
+  font-weight: 600;
+  margin-top: 0;
+}
+
+h3 {
+  color: var(--azzurro);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+a { color: var(--azzurro); }
+
+.button {
+  display: inline-block;
+  background: var(--giallo);
+  color: var(--testo-su-giallo);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 14px 34px;
+  box-shadow: 0 5px 0 var(--giallo-scuro);
+  margin: 6px 8px;
+}
+
+.button.secondary {
+  background: var(--blu-chiaro);
+  color: var(--bianco-ghiaccio);
+  border: 2px solid rgba(189, 230, 255, 0.45);
+  box-shadow: 0 5px 0 #0C2B49;
+}
+
+.button:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--giallo-scuro); }
+
+.center { text-align: center; }
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(234, 245, 255, 0.6);
+  margin-top: 48px;
+}
+
+footer a { color: rgba(234, 245, 255, 0.8); }
+
+.muted { color: rgba(234, 245, 255, 0.75); font-size: 15px; }
